@@ -5,62 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web development bootcamp</title>
+    <link href="https//fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Patua+One&display=swap"ref="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <h3>SHE GCEK</h3>
+     <div class="apple">
+        <div id="caption">
+            <h1><span class="highlight">SHE</span> GCEK</h1>
         </div>
         <Nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </Nav>
+     </div>
     </header>
-    <section id="Hero">
-        <div>
-            <h1>Web Development <br>Bootcamp</h1>
+    <section id="heading">
+        <div class="apple">
+            <h1>Web Development</h1>
+             <h2>Bootcamp</h2>
         </div>
     </section>
+    <section id="search">
+    </section>
+
     <section id="images">
-        <div>
-            <img src="images/IMG-20210622-WA0068.jpg" alt="HTML Image">
-            <h3>HTML</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed. Voluptatem ea exercitationem, consectetur vitae repudiandae blanditiis tempora nisi voluptatum at officiis.</p>
+        <div class="apple">
+         <div class="box">
+           <img src="images/IMG-20210622-WA0068.jpg" alt="HTML Image">
+           <h3>HTML</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed.</p>
+         </div>
+        <div class="box">
+           <img src="images/IMG-20210622-WA0069.jpg" alt="CSS Image">
+           <h3>CSS</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed.</p>
         </div>
-        <div>
-            <img src="images/IMG-20210622-WA0069.jpg" alt="CSS Image">
-            <h3>CSS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed. Voluptatem ea exercitationem, consectetur vitae repudiandae blanditiis tempora nisi voluptatum at officiis.</p>
-        </div>
-        <div>
-            <img src="images/IMG-20210622-WA0067.jpg" alt="JAVASCRIPT Images" height="200" width="200">
+        <div class="box">
+            <img src="images/IMG-20210622-WA0067.jpg" alt="JAVASCRIPT Images" >
             <h3>JS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed. Voluptatem ea exercitationem, consectetur vitae repudiandae blanditiis tempora nisi voluptatum at officiis.</p>
-        </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, doloribus consequatur. Tempora quaerat minus exercitationem placeat voluptates sed.</p>
+         </div>
+      </div>
     </section>
+    <div class="clr"></div>
     <section id="Slogan">
-        <div>
+        <div class="apple">
+            <div class="slogan">
             <h2>Hurry up! and experience the journey with us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis iste id, fugiat soluta numquam? Dolorum laudantium ut odit praesentium et sed, ad, provident totam tempora delectus fuga explicabo omnis.</p>
+            <h4>Register Here</h4>
+         </div>
         </div>
     </section>
     <section id="forms">
-        <h4>Register Here</h4>
-        <div>
-            <form>
-                <div>
+        <div class="apple">
+            <form style="text-align: center;justify-content: center;">
+           <div class="form">
                     <label>Name</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="form">
                     <label>Email</label>
                     <input type="email">
                 </div>
-                <div>
+                <div class="form">
                     <label>Batch</label>
                     <select>
                         <option>2k20</option>
@@ -69,17 +82,29 @@
                         <option>2k17</option>
                     </select>
                 </div>
-                <div>
+                <div class="form">
                     <input type="submit">
                 </div>
             </form>
         </div>
     </section>
-    <section id="video">
-        <h2>Learn,Explore and Create</h2>
-        <iframe width="600" height="400" src="https://www.youtube.com/embed/HEMjF3LEtCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="slogans">
+        <div class="apple">
+            <div class="slogan"> 
+                 <h2>Learn,Explore and Create</h2>
+            </div>
+        </div>
     </section>
+    <section id="video">
+        <div class="apple">
+            <div class="video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/HEMjF3LEtCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>For further information:Email at <a href="#">abc@xyz.com</a>,Copyright &copy;2020</p>
+    </footer>
 </body>
 </html>
