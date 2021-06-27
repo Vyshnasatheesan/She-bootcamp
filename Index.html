@@ -7,6 +7,7 @@
     <title>Web development bootcamp</title>
     <link href="https//fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Patua+One&display=swap"ref="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
         </div>
         <Nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li class="current"> <a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
@@ -58,34 +59,32 @@
             <div class="slogan">
             <h2>Hurry up! and experience the journey with us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis iste id, fugiat soluta numquam? Dolorum laudantium ut odit praesentium et sed, ad, provident totam tempora delectus fuga explicabo omnis.</p>
+             <button onclick="changecontent()">Know more</button>
+             <p id="know-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis iste id, fugiat soluta numquam? Dolorum laudantium ut odit praesentium et sed, ad, provident totam tempora delectus fuga explicabo omnis</p>
             <h4>Register Here</h4>
          </div>
         </div>
     </section>
     <section id="forms">
         <div class="apple">
-            <form style="text-align: center;justify-content: center;">
+            <form style="text-align: center;justify-content: center;" onsubmit="return validation()">
            <div class="form">
                     <label>Name</label>
-                    <input type="text">
+                    <input id="name-input" type="text" name="name">
+                    <p id="name-validation">Enter name</p>
                 </div>
                 <div class="form">
                     <label>Email</label>
-                    <input type="email">
+                    <input id="email-input" type="text" name="email">
+                    <p id="email-validation">email cannot be empty!</p>
                 </div>
                 <div class="form">
-                    <label>Batch</label>
-                    <select>
-                        <option>2k20</option>
-                        <option>2k19</option>
-                        <option>2k18</option>
-                        <option>2k17</option>
-                    </select>
+                    <label>Password</label>
+                    <input id="password-input" type="password" name="password">
+                    <p id="password-validation">Enter password</p>
                 </div>
-                <div class="form">
-                    <input type="submit">
-                </div>
-            </form>
+                 <input type="submit">
+             </form>
         </div>
     </section>
     <section id="slogans">
